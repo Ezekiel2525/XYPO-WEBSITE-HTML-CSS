@@ -1,0 +1,669 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 75.58%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #f67c92;
+}
+
+
+header {
+    background-image: url(img/background.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 2rem 7%;
+}
+
+.logo {
+    width: 8rem;
+    height: auto;
+}
+
+.textbox {
+    padding: 10rem 0;
+    max-width: 35rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.textbox h1 {
+    font-size: 3rem;
+}
+
+.square {
+    background-color: #f67c92;
+    width: .8rem;
+    height: .8rem;
+    display: inline-block;
+    margin: .8rem 0;
+}
+
+.textbox p {
+    font-size: 1.2rem;
+    color: #777;
+    line-height: 1.8rem;
+}
+
+.xybtn {
+    padding: 1.2rem 2rem;
+    width: 50%;
+    background-color: #f67c92;
+    border-radius: .2rem 2rem;
+    border: 1px solid #f67c92;
+    outline: none;
+    color: #fff;
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+    transition: 1s;
+    text-wrap: nowrap;
+}
+
+.xybtn:hover {
+    border-radius: 2rem .2rem;
+    cursor: pointer;
+}
+
+.line {
+    margin: 1.5rem 0;
+}
+
+.line1 {
+    background-color: #f67c92;
+    width: .9rem;
+    height: 1rem;
+    display: inline-block; 
+}
+
+.line2 {
+    background-color: #f67c92;
+    width: 4rem;
+    height: .2rem;
+    display: inline-block; 
+}
+.line3 {
+    background-color: #f67c92;
+    width: 8rem;
+    height: .2rem;
+    display: inline-block; 
+}
+
+#sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background-color: #f67c92;
+    z-index: 2;
+    transition: 1s;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 3.25rem 2rem;
+   /* margin: 40px 20px; */
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+#menuicon {
+    width: 4.4rem;
+    height: auto;
+    position: fixed;
+    top: 2rem;
+    right: 7%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+/* -----------ABOUT----------- */
+
+#about, #offers {
+    padding: 10rem 7%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.leftcol {
+    flex-basis: 50%;
+}
+
+.leftcol img {
+    width: 100%;
+    height: auto;
+}
+
+.rightcol {
+    flex-basis: 50%;
+    text-align: right;
+    max-width: 35rem;
+}
+
+.abouttext {
+    text-align: right;
+}
+
+.abouttext h1 {
+    font-size: 3rem;
+    padding: 1.4rem 0;
+}
+
+.abouttext p {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    color: #777;
+}
+
+.abouttext h3 {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    font-style: italic;
+}
+
+.abouttext h6 {
+    font-size: 1.4rem;
+    padding: 1rem 0;
+}
+
+
+/* <!-- ------------FEATURES------------ --> */
+
+#features {
+    padding: 10rem 0;
+}
+
+.featurebox {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.featcon {
+    flex-basis: 25%;
+    text-align: center;
+}
+
+.featcon img {
+    width: 120px;
+}
+
+.featcon h2 {
+    font-size: 1.5rem;
+}
+
+.featcon p {
+    font-size: 1rem; 
+    padding: .5rem 0;
+    color: #777;
+}
+
+.featline {
+    width: 50%;
+    margin: 5rem auto 1rem;
+   /* background-color: aqua; */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.line-1 {
+    background-color: #f67c92;
+    width: .9rem;
+    height: 1rem;
+    display: block; 
+}
+
+.line-2 {
+    background-color: #f67c92;
+    width: 3rem;
+    height: .2rem;
+    display: block; 
+}
+.line-3 {
+    background-color: #f67c92;
+    width: 7rem;
+    height: .3rem;
+    display: block; 
+}
+
+.featbtn {
+    padding: 1.5rem 4rem;
+    background-color: #f67c92;
+    border-radius: .5rem;
+    border: 1px solid #f67c92;
+    outline: none;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 4rem; 
+    transition: 1s;
+    text-wrap: nowrap;
+}
+
+.featbtn:hover {
+    border-radius: 2rem .2rem;
+    cursor: pointer;
+}
+
+
+/* ----------COURSES---------------- */
+
+#courses {
+    padding: 10rem 7%;
+}
+
+.courseleft, .courseright {
+    flex-basis: 50%;
+}
+
+.coursetext {
+    max-width: 35rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.coursetext h1 {
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+
+.coursetext p {
+    font-size: 1.2rem;
+    padding: .8rem 0;
+    color: #777;
+    line-height: 1.8rem;
+}
+
+.courseright img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* ------------CONTACT---------- */
+
+#contact {
+    padding: 10rem 7%;
+}
+
+.conleft, .conright {
+    flex-basis: 50%;
+}
+
+.context {
+    max-width: 35rem;
+}
+
+.context h1 {
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+
+form input {
+    width: 100%;
+    height: 3.2rem;
+    margin: 1rem auto .3rem;
+    border-radius: .2rem;
+    border: 2px solid #f67c92;
+    padding: .8rem;
+}
+
+.form-btn {
+    width: 90%;
+    padding: 1rem 0;
+}
+
+.conbtn {
+    background: #f67c92;
+    color: #fff;
+    padding: 1.2rem 4rem;
+    border: 1px solid #f67c92;
+    outline: none;
+    font-weight: bold;
+    /* text-wrap: nowrap; */
+    border-radius: 5px;
+    transition: 1s ease-in-out;
+    margin-bottom: 1rem;
+}
+
+.conbtn:hover {
+    border-radius: .3rem 3rem;
+    cursor: pointer;
+}
+
+.conright img {
+    width: 100%;
+}
+
+
+/* --------------FOOTER------------------- */
+
+#footer {
+   padding: 5rem 7% .2rem;
+}
+
+.footline {
+    background-color: #f67c92;
+    height: 1px;
+    border: none;
+}
+
+.footleft {
+    flex-basis: 60%;
+}
+
+.footlinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footwords h3 {
+    color: #f67c92;
+    font-size: 1.3rem;
+    padding-bottom: .4rem;
+}
+
+.footwords small {
+    font-size: 1rem;
+    padding-bottom: .4rem;
+    color: #777;
+}
+
+.footwords p {
+    font-size: 1.1rem;
+    padding-bottom: .4rem;
+}
+
+
+.footright {
+    flex-basis: 30%;
+}
+
+
+.social-icons{
+    width: 20%;
+    height: 20%;
+}
+
+
+.social-icons .socials{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.socials img {
+   width: 22px;
+   margin: .3rem .8rem;
+}
+
+
+@media screen and (max-width: 767px) {
+    header {
+        background-image: none;
+        min-height: 80vh;
+    }
+
+    .logo {
+        width: 6rem;
+    }
+
+    .textbox {
+        padding: 4rem 9%;
+        max-width: 32rem;
+    }
+    
+    .textbox h1 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+   
+    .textbox p {
+        font-size: 1rem;
+        color: #777;
+        line-height: 1.8rem;
+    }
+    
+    .xybtn {
+        padding: 1rem 1.5rem;
+        border-radius: .2rem 2rem;  
+    }
+    
+    .xybtn:hover {
+        border-radius: 2rem .2rem;
+        cursor: pointer;
+    }
+
+    #menuBtn {
+        width: 50px;
+        right: 50px;
+    }
+
+    .line {
+        margin: 1.5rem 0;
+    }
+    
+    .line1 {
+        width: .7rem;
+    }
+    
+    .line2 {
+        width: 2rem;
+    }
+    .line3 {
+        width: 4rem;
+    }
+
+    .leftcol {
+        flex-basis: 100%;
+    }
+    
+    .leftcol img {
+        width: 100%;
+        height: auto;
+        margin: 0 2rem;
+    }
+    
+    .rightcol {
+        flex-basis: 100%;
+        text-align: left;
+        max-width: 30rem;
+    }
+    
+    .abouttext {
+        text-align: left;
+        padding: 5rem 9%;
+    }
+    
+    .abouttext h1 {
+        font-size: 2.5rem;
+    }
+    
+    .abouttext p {
+        font-size: 1.3rem;
+    }
+    
+        
+    #features {
+        padding: 4rem 9%;
+    }
+
+    .featcon {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .featcon img {
+        height: auto;
+    }
+
+    .featcon p {
+        font-size: 1rem; 
+        padding: .5rem 0;
+        color: #777;
+    }
+
+    .line-1 {
+        width: .9rem;
+    }
+
+    .line-2 {
+        width: 2.5rem;
+    }
+
+    .line-3 {
+        width: 4rem;
+    }
+
+    .featbtn {
+        padding: 1.2rem 2rem;
+    }
+
+    #courses {
+        padding: 4rem 7%;
+    }
+    
+    .courseleft, .courseright {
+        flex-basis: 100%;
+    }
+    
+    .coursetext {
+        padding: 0 9%;
+    }
+    
+    .coursetext h1 {
+        font-size: 2.2rem;
+        padding: 1rem 0;
+    }
+
+    .courseright img {
+        height: auto;
+        padding: 4rem 9%;
+    }
+    
+        
+    #contact {
+        padding: 4rem 9%;
+    }
+
+    .conleft, .conright {
+        flex-basis: 100%;
+    }
+
+    .context {
+        max-width: 35rem;
+        padding: 0 9%;
+    }
+
+    .context h1 {
+        font-size: 2.5rem;
+        padding: 1rem 0;
+    }
+
+    .conbtn {
+        padding: 1rem 1rem; 
+    }
+
+    .conright img {
+        padding: 4rem 9%;
+        height: auto;
+    }
+
+            
+    #footer {
+        padding: 5rem 9% .2rem;
+    }
+    
+    .footline {
+        background-color: #f67c92;
+        height: 1px;
+        border: none;
+    }
+    
+    .footleft, .footright {
+        flex-basis: 100%;
+    }
+    
+    .footwords {
+        flex-basis: 50%;
+        margin-bottom: 1rem;
+        padding: 2rem 10%;
+    }
+    
+    .footwords h3 {
+        color: #f67c92;
+        font-size: 1.3rem;
+        padding-bottom: .4rem;
+    }
+    
+    .footwords small {
+        font-size: 1rem;
+        padding-bottom: .4rem;
+        color: #777;
+    }
+    
+    .footwords p {
+        font-size: 1.2rem;
+        padding-bottom: .4rem;   
+    }
+
+    .footp {
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+
+   
+
+    .footright .footwords:last-child {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    
+
+
+   
+}
+
+
+
+
